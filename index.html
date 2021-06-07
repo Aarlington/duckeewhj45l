@@ -14,7 +14,6 @@
             arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
             id="scene"
             embedded
-            gesture-detector
         >
             <a-marker
                 id="animated-marker"
@@ -24,8 +23,9 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
-                onclick="window.open('click2.js')"
+                oncalick="window.open('click2.js')"
                 id="markerA"
+                gesture-detector
             >
             <script type="text/javascript" src="js/onclick.js"></script>
                 <a-image
@@ -37,6 +37,7 @@
                     rotation="-90 0 0"
 
                     gesture-handler
+                    gesture-detector
                 ></a-image>
             </a-marker>
 

@@ -18,19 +18,19 @@
         >
 
         <a href="http://www.google.com" target="_asset.png">
-            <img width="220" height="250"  src="a-image"/>
+            <img width="220" height="250"  src="markerA"/>
           </a>
             <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/1337.patt"
+                url="assets/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
                 tabIndex="0"
-                onclick="window.url(www.google.com)"
+                onclick="window.url(http://www.google.com)"
                 onclick="window.open(http://www.google.com/)"
                 
             >
@@ -41,7 +41,8 @@
                     class="clickable"
                     rotation="-90 0 0"
                     role="button"
-                    onClick="window.open('http://www.google.com')"
+                    tabIndex="0"
+                    onClick="window.open(http://www.google.com/)"
                     onclick="window.open('http://www.google.com/')"
                 ></a-image>
             </a-marker>

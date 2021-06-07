@@ -31,8 +31,8 @@
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
                 tabIndex="0"
-                onclick="window.url(http://www.google.com)"
-                onclick="window.open(http://www.google.com/)"
+                onclick="window.url('http://www.google.com')"
+                onclick="window.open('http://www.google.com/')"
 
                 
                 
@@ -40,32 +40,31 @@
             <a-marker preset='marker'>
                 <a-entity><a-image class="markerA" cursor-listener id="animated-marker" src="assets/asset.png" position="0 -1.6 0" mtl="#crate-mtl" rotation="-90 0 0" scale="0.004 0.004 0.004" material="" obj-model=""></a-marker></a-entity> 
                 <a-entity  material=" src: url(assets/asset.png) " class="markerA" cursor- 
-              listener position="0 -1 0" onClick="window.open(http://www.google.com/)"></a-entity> 
-              <img src="assets/asset.png" alt="assets/asset" onclick="window.open('index.html', '_blank');" />
+              listener position="0 -1 0" onClick="window.URL('http://www.google.com/')"></a-entity> 
+              <img src="assets/asset.png" alt="assets/asset" onclick="window.open('index.html', '_blank')" />
                     
                 <a-image
                     src="assets/asset.png"
                     scale="1 1 1"
-                    class="markerA"
+                    class="clickable"
                     rotation="-90 0 0"
                     role="button"
                     tabIndex="0"
                     onClick="window.open('http://www.google.com/')"
-                    onclick="window.open("http://www.google.com/")"
-                    
 
                 ></a-image>
-                <img src="assets/asset.png" alt="assets/asset" onclick="window.open('anotherpage.html', '_blank');" />
-                <img src="assets/marker" alt="assets/asset" onclick="window.open('anotherpage.html', '_blank');" />
+                <a-image play-on-window-click src="#assets/asset" scale="5 5 5" rotation="90 180 0" position="0 0 0" material="" geometry="" gesture-handler></a-image>
+                <img src="assets/asset.png" alt="assets/asset" onclick="window.open('index.html', '_blank');" />
+                <img src="assets/marker" alt="assets/asset" onclick="window.open('index.html', '_blank');" />
             <script>
                 <a href="https://www.google.com/" target="_blank"></a>
 
                $(function() {
                     $('https://google.com/').click(function(){ URL(); });
-                }
+                });
             </script>    
             </a-marker>
-
+            
             
 
             <a-entity camera></a-entity>

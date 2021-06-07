@@ -16,24 +16,35 @@
             embedded
             gesture-detector
         >
+
+        <a href="http://www.google.com" target="_asset.png">
+            <img width="220" height="250"  src="a-image"/>
+          </a>
             <a-marker
                 id="animated-marker"
                 type="pattern"
                 preset="custom"
-                url="assets/hiro.patt"
+                url="assets/1337.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
+                onclick="window.url(www.google.com)"
+                onclick="window.open(http://www.google.com/)
+                
             >
+            
                 <a-image
                     src="assets/asset.png"
                     scale="1 1 1"
                     class="clickable"
                     rotation="-90 0 0"
                     gesture-handler
+                    onclick="window.open('http:/.www.google.com/')"
                 ></a-image>
             </a-marker>
+
+            
 
             <a-entity camera></a-entity>
         </a-scene>

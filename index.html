@@ -24,15 +24,18 @@
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
+                onClick="window.open('click2.js')"
                 id="markerA"
             >
+            <script type="text/javascript" src="js/onclick.js"></script>
                 <a-image
                     src="assets/asset.png"
                     scale="1 1 1"
                     class="clickable"
-                    onClick="window.open(index.html)"
+                    onClick="window.open('click2.js')"
                     role="button"
                     rotation="-90 0 0"
+
                     gesture-handler
                 ></a-image>
             </a-marker>
